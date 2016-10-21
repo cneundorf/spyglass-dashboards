@@ -1,0 +1,3440 @@
+{
+  "id": 4,
+  "title": "CLDB Dashboard new",
+  "tags": [
+    "Demo"
+  ],
+  "style": "dark",
+  "timezone": "browser",
+  "editable": true,
+  "hideControls": false,
+  "sharedCrosshair": false,
+  "rows": [
+    {
+      "collapse": true,
+      "editable": true,
+      "height": "25px",
+      "panels": [
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "",
+          "hideTimeOverride": false,
+          "id": 2,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.nodes_in_cluster",
+              "refId": "A",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "2,3",
+          "timeFrom": null,
+          "title": "# Nodes",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 9,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "avg",
+              "alias": "",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.nodes_offline",
+              "refId": "A",
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "1,0",
+          "title": "#Nodes offline",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "gbytes",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 6,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Disk Space Available",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "downsampleInterval": "",
+              "errors": {},
+              "metric": "mapr.cldb.disk_space_available",
+              "refId": "A",
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "0.2,0.3",
+          "title": "Disk Space Available",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 4,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.containers",
+              "refId": "A",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "",
+          "title": "# Containers",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 8,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.containers_unusable",
+              "refId": "A",
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "",
+          "title": "# Unusable containers",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 11,
+          "interval": null,
+          "links": [
+            {
+              "dashUri": "db/volume-dashboard",
+              "dashboard": "Volume Dashboard",
+              "keepTime": true,
+              "title": "Volume Dashboard",
+              "type": "dashboard"
+            }
+          ],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 4,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Disk Space Available",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.volumes",
+              "refId": "A",
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            }
+          ],
+          "thresholds": "0.2,0.3",
+          "title": "Volumes",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        }
+      ],
+      "showTitle": true,
+      "title": "Cluster information"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {
+            "Busy": "#E24D42"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": 70,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": 90,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)",
+            "thresholdLine": true
+          },
+          "id": 1,
+          "legend": {
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [
+            {
+              "dashUri": "db/node-dashboard",
+              "dashboard": "Node Dashboard",
+              "keepTime": true,
+              "title": "Node Dashboard",
+              "type": "dashboard"
+            }
+          ],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Busy",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "disableDownsampling": false,
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "hide": false,
+              "isCounter": false,
+              "metric": "mapr.cldb.cluster_cpubusy_percent",
+              "refId": "B",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              },
+              "target": ""
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "CPU utilization",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "percent",
+              "logBase": 1,
+              "max": 100,
+              "min": 0,
+              "show": true
+            },
+            {
+              "format": "none",
+              "logBase": 1,
+              "max": 100,
+              "min": 0,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "Used": "#E24D42"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 3,
+          "legend": {
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [
+            {
+              "dashUri": "db/node-dashboard",
+              "dashboard": "Node Dashboard",
+              "keepTime": true,
+              "title": "Node Dashboard",
+              "type": "dashboard"
+            }
+          ],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Capacity",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.cluster_disk_capacity",
+              "refId": "A",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            },
+            {
+              "aggregator": "sum",
+              "alias": "Used",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.cluster_diskspace_used",
+              "refId": "B",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              },
+              "target": ""
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Disk Utilization",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "gbytes",
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            },
+            {
+              "format": "gbytes",
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "Used": "#E24D42"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 5,
+          "legend": {
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [
+            {
+              "dashUri": "db/node-dashboard",
+              "dashboard": "Node Dashboard",
+              "keepTime": true,
+              "title": "Node Dashboard",
+              "type": "dashboard"
+            }
+          ],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Capacity",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "downsampleInterval": "",
+              "errors": {},
+              "metric": "mapr.cldb.cluster_memory_capacity",
+              "refId": "A",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              }
+            },
+            {
+              "aggregator": "sum",
+              "alias": "Used",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "errors": {},
+              "metric": "mapr.cldb.cluster_memory_used",
+              "refId": "B",
+              "shouldComputeRate": false,
+              "tags": {
+                "clusterid": "$ClusterID"
+              },
+              "target": ""
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Memory utilization",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "mbytes",
+              "logBase": 1,
+              "max": null,
+              "min": 10,
+              "show": true
+            },
+            {
+              "format": "mbytes",
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "showTitle": true,
+      "title": "Cluster Utilization"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {
+            "IN": "#E24D42",
+            "OUT": "#1F78C1"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 40,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "OUT",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "downsampleInterval": "",
+              "metric": "interface.if_octets.tx",
+              "refId": "A",
+              "shouldComputeRate": true
+            },
+            {
+              "aggregator": "sum",
+              "alias": "IN",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "interface.if_octets.rx",
+              "refId": "B",
+              "shouldComputeRate": true
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Cluster Network IO",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            },
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "mapr.rm.apps_running": "#1F78C1"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 14,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.apps_running",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.apps_pending",
+              "refId": "B"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Active Applications",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": 0,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "Allocated Vcore": "#E24D42",
+            "Available Vcores": "#508642",
+            "mapr.rm.reserved_vcores": "#F9934E"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 13,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "Allocated Vcore",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.allocated_vcores",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "alias": "Available Vcores",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.available_vcores",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.reserved_vcores",
+              "refId": "C"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "YARN VCORES",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "mapr.rm.allocated_MB": "#BF1B00",
+            "mapr.rm.available_MB": "#508642",
+            "mapr.rm.reserved_MB": "#F9934E"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 21,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.allocated_MB",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.available_MB",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.rm.reserved_MB",
+              "refId": "C"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "YARN Memory",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "mbytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "mbytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "content": "<!DOCTYPE html>\n<html>\n<body>\n\n<center><img src=\"public/img/maprdb.png\" alt=\"W3Schools.com\" style=\"width:400px;height:50px;\"></center>\n\n</body>\n</html>\n",
+          "editable": true,
+          "error": false,
+          "height": "80",
+          "id": 46,
+          "isNew": true,
+          "links": [],
+          "mode": "html",
+          "span": 12,
+          "title": "MapR Stats",
+          "type": "text"
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {
+            "mapr.fs.local_reads": "#1F78C1",
+            "mapr.fs.local_writes": "#E24D42",
+            "mapr.fs.reads": "#1F78C1",
+            "mapr.fs.writes": "#E24D42"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 20,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_reads",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_writes",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.writes",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.reads",
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR Cluster Ops",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "ops",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "ops",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "MFS Local Reads": "#0A437C",
+            "MFS Local Writes": "#E24D42",
+            "MFS Reads": "#E24D42",
+            "MFS Writes": "#0A437C",
+            "mapr.fs.local_readbytes": "#0A50A1",
+            "mapr.fs.local_writebytes": "#E24D42",
+            "mapr.fs.read_bytes": "#1F78C1",
+            "mapr.fs.write_bytes": "#E24D42"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "height": "250",
+          "id": 23,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "alias": "MFS Local Writes",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_writebytes",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "alias": "MFS Local Reads",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_readbytes",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "alias": "MFS Writes",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.write_bytes",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "alias": "MFS Reads",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.read_bytes",
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR-FS Throughput",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "MBs",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "MBs",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "mapr.db.get_rpcs": "#1F78C1",
+            "mapr.db.put_rpcs": "#E24D42",
+            "mapr.db.scan_rpcs": "#629E51"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 16,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.get_rpcs",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "alias": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.put_rpcs",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.scan_rpcs",
+              "refId": "C"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR-DB  Total Put and Get RPCS",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {
+            "mapr.db.get_rpcrows": "#1F78C1",
+            "mapr.db.put_rpcrows": "#E24D42",
+            "mapr.db.scan_rpcrows": "#7EB26D"
+          },
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 17,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.get_rpcrows",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.put_rpcrows",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.db.scan_rpcrows",
+              "refId": "C"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Database Operations Rows per Second",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "ops",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {
+            "mapr.cache.lookups_data": "#629E51",
+            "mapr.cache.misses_data": "#E24D42"
+          },
+          "cacheTimeout": null,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fontSize": "80%",
+          "format": "short",
+          "height": "400",
+          "id": 22,
+          "interval": null,
+          "isNew": true,
+          "legend": {
+            "show": true,
+            "values": true
+          },
+          "legendType": "Under graph",
+          "links": [],
+          "maxDataPoints": 3,
+          "nullPointMode": "connected",
+          "pieType": "pie",
+          "span": 3,
+          "strokeWidth": 1,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_data",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_data",
+              "refId": "B"
+            }
+          ],
+          "title": "Cache Hit",
+          "type": "grafana-piechart-panel",
+          "valueName": "current"
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "height": "280",
+          "id": 19,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_table",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_data",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_dir",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_inode",
+              "refId": "D"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_inode",
+              "refId": "E"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_largefile",
+              "refId": "F"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_meta",
+              "refId": "G"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.misses_smallfile",
+              "refId": "H"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR Cache Misses",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "height": "280",
+          "id": 18,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_table",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_data",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_dir",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_inode",
+              "refId": "D"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_largefile",
+              "refId": "E"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "refId": "F"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_meta",
+              "refId": "G"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.cache.lookups_smallfile",
+              "refId": "H"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR Cache Lookups",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "height": "280",
+          "id": 24,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.statstype_create",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.statstype_lookup",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.statstype_read",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.statstype_write",
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR Stats",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "150px",
+      "panels": [
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "150",
+          "id": 34,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 3,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "max",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.write_bytes",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "MapR-FS-Write max",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(50, 172, 45, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 600,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "150",
+          "id": 33,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "targets": [
+            {
+              "aggregator": "min",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "downsampleInterval": "",
+              "metric": "mapr.fs.local_writes",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "400",
+          "title": "MapR-FS Write Max",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(50, 172, 45, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 59, 54, 0.9)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "MBs",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "150",
+          "id": 36,
+          "interval": null,
+          "isNew": true,
+          "links": [
+            {
+              "type": "dashboard"
+            }
+          ],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "100%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(13, 67, 112)",
+            "show": true
+          },
+          "targets": [
+            {
+              "aggregator": "max",
+              "alias": "MB/s",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_writebytes",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "400",
+          "title": "Max Local Writes",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "150",
+          "id": 37,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.writes",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "Write IOps",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "height": "150",
+          "id": 35,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 3,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.local_writes",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "Local Write Iops",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "200px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 25,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.kvstore_delete",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.kvstore_insert",
+              "refId": "B"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.kvstore_lookup",
+              "refId": "C"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.kvstore_scan",
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR_CLDB_Stats",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 26,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.btree.deletes",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR btree deletes",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 43,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.bulk_writesbytes",
+              "refId": "A",
+              "shouldComputeRate": false
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.fs.bulk_writes",
+              "refId": "B"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MapR-FS Bulk Write/Read",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "25px",
+      "panels": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n<body>\n\n<center><img src=\"public/img/drill.png\" alt=\"W3Schools.com\" style=\"width:80px;height:80px;\"></center>\n\n</body>\n</html>\n",
+          "editable": true,
+          "error": false,
+          "height": "40",
+          "id": 47,
+          "isNew": true,
+          "links": [],
+          "mode": "html",
+          "span": 12,
+          "title": "SQL Adhoc Reporting",
+          "type": "text"
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 28,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.drill.direct_used",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Drill Direct Mem Use",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "bytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "bytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 31,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 3,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.drill.runnable_count",
+              "refId": "A"
+            },
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.drill.waiting_count",
+              "refId": "B"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Drill Runnable Count",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 30,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 3,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.drill.queries_running",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "Drill Queries Running",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 29,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 3,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "aggregator": "sum",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "mapr.drill.queries_completed",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "Drill Queries Completed",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {
+            "cpu.percent{fqdn=ip-192-168-2-112.eu-west-1.compute.internal}": "#614D93",
+            "cpu.percent{fqdn=ip-192-168-2-113.eu-west-1.compute.internal}": "#1F78C1",
+            "cpu.percent{fqdn=ip-192-168-2-114.eu-west-1.compute.internal}": "#9AC48A"
+          },
+          "bars": false,
+          "datasource": null,
+          "decimals": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": 300,
+            "threshold1Color": "rgba(239, 220, 9, 0.27)",
+            "threshold2": 400,
+            "threshold2Color": "rgba(245, 47, 0, 0.22)",
+            "thresholdLine": true
+          },
+          "id": 38,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": true,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "avg",
+              "alias": "",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "cpu.percent",
+              "refId": "A",
+              "shouldComputeRate": false,
+              "tags": {
+                "cpu_class": "user",
+                "fqdn": "*"
+              }
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "CPU Utilization Cluster Nodes",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "percent",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 41,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "interface.if_octets.rx",
+              "refId": "A",
+              "shouldComputeRate": true,
+              "tags": {
+                "fqdn": "*"
+              }
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Network IN All Nodes",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 42,
+          "isNew": true,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "aggregator": "sum",
+              "currentTagKey": "",
+              "currentTagValue": "",
+              "downsampleAggregator": "avg",
+              "downsampleFillPolicy": "none",
+              "metric": "interface.if_octets.tx",
+              "refId": "A",
+              "shouldComputeRate": true,
+              "tags": {
+                "fqdn": "*"
+              }
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Network Out All Nodes",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "show": true
+          },
+          "yaxes": [
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "title": "New row"
+    }
+  ],
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {
+    "collapse": false,
+    "enable": true,
+    "notice": false,
+    "now": true,
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "status": "Stable",
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ],
+    "type": "timepicker"
+  },
+  "templating": {
+    "list": [
+      {
+        "allFormat": "glob",
+        "current": {
+          "text": "7679182471442459355",
+          "value": "7679182471442459355"
+        },
+        "datasource": null,
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "multiFormat": "glob",
+        "name": "ClusterID",
+        "options": [
+          {
+            "selected": true,
+            "text": "7939826644636721265",
+            "value": "7939826644636721265"
+          }
+        ],
+        "query": "tag_values(mapr.cldb.nodes_in_cluster, clusterid)",
+        "refresh": 0,
+        "type": "query"
+      }
+    ]
+  },
+  "annotations": {
+    "list": []
+  },
+  "refresh": "10s",
+  "schemaVersion": 12,
+  "version": 86,
+  "links": [
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
+        "Demo"
+      ],
+      "title": "Cluster Overview Dashboards",
+      "type": "dashboards"
+    }
+  ],
+  "gnetId": null
+}
