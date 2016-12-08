@@ -1,8 +1,8 @@
 {
   "id": 4,
-  "title": "CLDB Dashboard new",
+  "title": "MapR Cluster Overview Dashboard",
   "tags": [
-    "Demo"
+    "MapR Cluster"
   ],
   "style": "dark",
   "timezone": "browser",
