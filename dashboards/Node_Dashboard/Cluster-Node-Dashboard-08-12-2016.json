@@ -1,4 +1,6 @@
-tle": "Node Dashboard 2",
+{
+  "id": 5,
+  "title": "Node Dashboard 2",
   "tags": [
     "MapR Cluster"
   ],
